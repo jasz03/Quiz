@@ -1,0 +1,17 @@
+fun main() {
+    val fahrenheit = 68.0 
+    val celsius = fahrenheitToCelsius(fahrenheit)
+    val kelvin = celsiusToKelvin(celsius)
+
+    println("Fahrenheit: $fahrenheit")
+    println("Celsius: $celsius")
+    println("Kelvin: $kelvin")
+}
+
+fun fahrenheitToCelsius(fahrenheit: Double): Double {
+    return (fahrenheit - 32) * 5 / 9
+}
+
+fun celsiusToKelvin(celsius: Double): Double {
+    return celsius + 273.15
+}
