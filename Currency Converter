@@ -1,0 +1,17 @@
+fun Currency(amount: Double, exchangeRate: Double): Double {
+    if (amount < 0.0 || exchangeRate <= 0.0) {
+        throw IllegalArgumentException("Amount and exchange rate must be positive values.")
+    }
+    
+    val Amount = amount * exchangeRate
+    return Amount
+}
+
+fun main() {
+    val amountInUSD = 100.0 
+    val exchangeRate = 1.12 
+    
+    val amountInEUR = Currency(amountInUSD, exchangeRate)
+    
+    println("$amountInUSD USD is equivalent to $amountInEUR EUR")
+}
